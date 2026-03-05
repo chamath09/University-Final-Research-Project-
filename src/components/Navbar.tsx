@@ -24,7 +24,6 @@ export default function Navbar() {
     { name: 'Research', href: '#research' },
     { name: 'Methodology', href: '#methodology' },
     { name: 'Data', href: '#data' },
-    { name: 'Demo', href: '#demo' },
     { name: 'Team', href: '#team' },
   ];
 

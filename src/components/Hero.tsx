@@ -5,7 +5,7 @@ import { ChevronRight, Play } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-5">
       <Hero3D />
       
       <div className="container mx-auto px-6 relative z-10 text-center">
@@ -32,10 +32,6 @@ export default function Hero() {
             <a href="#research" className="w-full sm:w-auto px-8 py-4 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-medium transition-all flex items-center justify-center gap-2 group">
               View Research
               <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </a>
-            <a href="#demo" className="w-full sm:w-auto px-8 py-4 rounded-full glass-panel hover:bg-white/10 text-white font-medium transition-all flex items-center justify-center gap-2 group">
-              <Play className="w-4 h-4 group-hover:scale-110 transition-transform" />
-              Watch Demo
             </a>
           </div>
         </motion.div>

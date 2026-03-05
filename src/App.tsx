@@ -9,7 +9,6 @@ import DataCollection from './components/DataCollection';
 import Outcomes from './components/Outcomes';
 import Status from './components/Status';
 import Challenges from './components/Challenges';
-import Demo from './components/Demo';
 import Team from './components/Team';
 import Footer from './components/Footer';
 
@@ -26,7 +25,6 @@ export default function App() {
       <Outcomes />
       <Status />
       <Challenges />
-      <Demo />
       <Team />
       <Footer />
     </div>

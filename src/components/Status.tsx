@@ -9,7 +9,6 @@ export default function Status() {
     { name: "RAG architecture design", status: "completed", progress: 100 },
     { name: "Chatbot UI development", status: "completed", progress: 100 },
     { name: "Full ASR + RAG + TTS pipeline integration", status: "completed", progress: 100 },
-    { name: "Evaluation and Testing", status: "in-progress", progress: 60 },
     { name: "Final Research Paper", status: "pending", progress: 20 }
   ];
 

@@ -4,14 +4,14 @@ import { GraduationCap, Users, Mail, Linkedin } from 'lucide-react';
 
 export default function Team() {
   const students = [
-    { name: "Wijesekara W.M.S.S", role: "Student Researcher", img: "https://picsum.photos/seed/student1/200/200" },
-    { name: "Chamath Upeka H.R.C", role: "Student Researcher", img: "https://picsum.photos/seed/student2/200/200" },
-    { name: "Deshanjana T.A.P", role: "Student Researcher", img: "https://picsum.photos/seed/student3/200/200" }
+    { name: "Wijesekara W.M.S.S", role: "Student Researcher" },
+    { name: "Chamath Upeka H.R.C", role: "Student Researcher" },
+    { name: "Deshanjana T.A.P", role: "Student Researcher" }
   ];
 
   const supervisors = [
-    { name: "Dr. Chamara Liyanage", role: "Supervisor", img: "https://picsum.photos/seed/supervisor1/200/200" },
-    { name: "Ms. Nirasha Kulasooriya", role: "Co-Supervisor", img: "https://picsum.photos/seed/supervisor2/200/200" }
+    { name: "Dr. Chamara Liyanage", role: "Supervisor" },
+    { name: "Ms. Nirasha Kulasooriya", role: "Co-Supervisor" }
   ];
 
   return (
@@ -54,8 +54,10 @@ export default function Team() {
                   transition={{ delay: idx * 0.1 }}
                   className="glass-panel p-6 rounded-3xl text-center hover:-translate-y-2 transition-transform duration-300 group"
                 >
-                  <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 border-2 border-purple-500/30 group-hover:border-purple-400 transition-colors">
-                    <img src={member.img} alt={member.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                  <div className="w-20 h-20 mx-auto rounded-full bg-slate-800 flex items-center justify-center mb-4 border-2 border-purple-500/30 group-hover:border-purple-400 transition-colors">
+                    <span className="text-2xl font-bold text-slate-400 group-hover:text-purple-400 transition-colors">
+                      {member.name.charAt(0)}
+                    </span>
                   </div>
                   <h4 className="text-lg font-semibold text-white mb-1">{member.name}</h4>
                   <p className="text-sm text-purple-400 mb-4">{member.role}</p>
@@ -88,8 +90,10 @@ export default function Team() {
                   transition={{ delay: idx * 0.1 }}
                   className="glass-panel p-6 rounded-3xl text-center hover:-translate-y-2 transition-transform duration-300 group"
                 >
-                  <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 border-2 border-blue-500/30 group-hover:border-blue-400 transition-colors">
-                    <img src={member.img} alt={member.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                  <div className="w-20 h-20 mx-auto rounded-full bg-slate-800 flex items-center justify-center mb-4 border-2 border-blue-500/30 group-hover:border-blue-400 transition-colors">
+                    <span className="text-2xl font-bold text-slate-400 group-hover:text-blue-400 transition-colors">
+                      {member.name.charAt(0)}
+                    </span>
                   </div>
                   <h4 className="text-lg font-semibold text-white mb-1">{member.name}</h4>
                   <p className="text-sm text-blue-400 mb-4">{member.role}</p>
